@@ -74,6 +74,8 @@ end
 
 function Deconstruct( event )
 
+	if event.player_index == nil then return end
+
 	local player = game.players[event.player_index]
 
 	if ( player.cursor_stack.valid_for_read == true ) and
